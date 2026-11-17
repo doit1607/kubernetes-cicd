@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+    <head>     
+        <meta charset="UTF-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <title>Kubernetes CI/CD Demo</title>     
+        <style>         
+        body {             
+            font-family: Arial, sans-serif;             
+            background: #eef2ff;             
+            display: flex;             
+            justify-content: center;             
+            align-items: center;             
+            min-height: 100vh;             
+            margin: 0;         
+        }
+
+    .container {
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 { color: #2563eb; }
+
+    p { color: #475569; }
+
+    .status {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #dcfce7;
+        color: #166534;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+</style>
+
+</head> 
+<body>     
+    <div class="container">         
+        <h1>Hello Kubernetes!</h1>         
+        <p>This application is deployed using GitHub Actions and ARC.</p>         
+        <p>Platform: Kubernetes</p>         
+        <p>Web Server: Nginx</p>         
+        <div class="status">Application Running Successfully</div>     
+    </div> 
+</body> 
+</html>
