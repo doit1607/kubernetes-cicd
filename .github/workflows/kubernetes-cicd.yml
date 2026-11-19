@@ -119,7 +119,10 @@ jobs:
           current-context: in-cluster
           EOF
 
-          kubectl cluster-info
+          kubectl auth can-i get deployments -n default
+          kubectl auth can-i patch deployments -n default
+          kubectl auth can-i create services -n default
+          kubectl auth can-i create ingresses.networking.k8s.io -n default
 
       # 7. Deploy website to Kubernetes
       - name: Deploy to Kubernetes
