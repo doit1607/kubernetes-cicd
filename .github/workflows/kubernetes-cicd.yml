@@ -64,8 +64,8 @@ jobs:
             build \
             --progress=plain \
             --frontend dockerfile.v0 \
-            --local context=./website \
-            --local dockerfile=./website \
+            --local context=. \
+            --local dockerfile=. \
             --opt filename=Dockerfile \
             --output "type=image,name=${IMAGE_NAME}:latest,name=${IMAGE_NAME}:${GITHUB_SHA},push=true"
 
